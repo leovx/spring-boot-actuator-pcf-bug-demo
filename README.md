@@ -22,9 +22,11 @@ filter to wrap up the provided 'IncludeExcludeEndpointFilter', so that we can ov
 in order to supply such endpoint.
 
 # Related Issues
-https://github.com/spring-projects/spring-boot/issues/28389
-https://github.com/spring-projects/spring-boot/issues/25471
-https://github.com/spring-projects/spring-boot/issues/28131
+> https://github.com/spring-projects/spring-boot/issues/28389
+>
+> https://github.com/spring-projects/spring-boot/issues/25471
+> 
+> https://github.com/spring-projects/spring-boot/issues/28131
 
 # Error log
 > org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointWebMvcHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is java.util.NoSuchElementException: No value present
