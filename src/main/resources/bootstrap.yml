@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-boot-actuator-pcf-bug-demo
+
+management.endpoints.web.exposure.include: routes,gateway,info
