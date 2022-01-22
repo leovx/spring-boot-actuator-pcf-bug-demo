@@ -15,13 +15,13 @@ The extension should be a unnecessary bean to instantiate when health endpoint i
 
 > e.g. management.endpoints.web.exposure.include: routes,gateway,info
 
-#My Current Temp Solution for Project
+# My Current Temp Solution for Project
 
 Intercept the startup process by supplying a bean of 'WebEndpointDiscoverer', where I inject a customized
 filter to wrap up the provided 'IncludeExcludeEndpointFilter', so that we can override the 'match()' method,
 in order to supply such endpoint.
 
-#Error log
+# Error log
 > org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointWebMvcHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is java.util.NoSuchElementException: No value present
 at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.14.jar:5.3.14]
 at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.14.jar:5.3.14]
