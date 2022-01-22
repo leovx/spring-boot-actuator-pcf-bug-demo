@@ -21,6 +21,11 @@ Intercept the startup process by supplying a bean of 'WebEndpointDiscoverer', wh
 filter to wrap up the provided 'IncludeExcludeEndpointFilter', so that we can override the 'match()' method,
 in order to supply such endpoint.
 
+# Related Issues
+https://github.com/spring-projects/spring-boot/issues/28389
+https://github.com/spring-projects/spring-boot/issues/25471
+https://github.com/spring-projects/spring-boot/issues/28131
+
 # Error log
 > org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointWebMvcHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is java.util.NoSuchElementException: No value present
 at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.14.jar:5.3.14]
