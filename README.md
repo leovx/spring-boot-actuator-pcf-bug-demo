@@ -10,8 +10,7 @@ The extension should be a unnecessary bean to instantiate when health endpoint i
 # Trigger Conditions
 0. Running on Cloud Foundry environment
 1. Using Spring Boot Actuator 2.6.x (Current latest = 2.6.2)
-2. Using Spring Cloud
-3. In your config file, manually include some endpoints but not 'health'
+2. In your config file, manually include some endpoints but not 'health'
 
 > e.g. management.endpoints.web.exposure.include: routes,gateway,info
 
