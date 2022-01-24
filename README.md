@@ -5,7 +5,7 @@ treated as Pivotal Cloud Foundry.
 
 > VCAP_APPLICATION={"app":"demo"}
 
-The extension should be a unnecessary bean to instantiate when health endpoint is not manually included.
+The extension should be an unnecessary bean to instantiate when health endpoint is not manually included.
 
 # Trigger Conditions
 0. Running on Cloud Foundry environment
@@ -19,6 +19,8 @@ The extension should be a unnecessary bean to instantiate when health endpoint i
 Intercept the startup process by supplying a bean of 'WebEndpointDiscoverer', where I inject a customized
 filter to wrap up the provided 'IncludeExcludeEndpointFilter', so that we can override the 'match()' method,
 in order to supply such endpoint.
+
+Issue ticket raised to https://github.com/spring-projects/spring-boot/issues/29532
 
 # Related Issues
 > https://github.com/spring-projects/spring-boot/issues/28389
