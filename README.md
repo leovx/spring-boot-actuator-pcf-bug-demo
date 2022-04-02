@@ -66,3 +66,13 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
 at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.14.jar:5.3.14]
 ... 20 common frames omitted
+ 
+# Permanent Fix
+[2.6.4](https://github.com/spring-projects/spring-boot/issues/29532)
+
+[2.7.0](https://github.com/spring-projects/spring-boot/issues/29584)
+
+Confirmed this bug has been fixed since [Spring Boot 2.6.4](https://spring.io/blog/2022/02/24/spring-boot-2-6-4-available-now)
+in [bug fix details](https://github.com/spring-projects/spring-boot/releases/tag/v2.6.4)
+
+Actual [code change](https://github.com/spring-projects/spring-boot/commit/0597c6831e7bfb262856af5017669c9f255257af)
